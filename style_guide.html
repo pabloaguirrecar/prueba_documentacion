@@ -276,7 +276,7 @@
 <ul>
 <li><p><strong>Docstrings:</strong>
 Each <span class="xref std std-ref">public</span> function, class, and module must include a docstring using triple quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.</p>
-<ul>
+<ul class="simple">
 <li><p>Use <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy style docstrings</a>.</p></li>
 <li><p>Include purpose, description, and usage in the docstring.</p></li>
 <li><p><em>Parameters:</em> Specify units if applicable.</p></li>
@@ -286,42 +286,37 @@ Each <span class="xref std std-ref">public</span> function, class, and module mu
 <li><p><strong>DDA (if exists):</strong> Relevant .docx file and link (stored in <code class="docutils literal notranslate"><span class="pre">docs/DDAs</span></code>).</p></li>
 <li><p><strong>References (if exists):</strong> Standards or related documentation.</p></li>
 <li><p><strong>Test Files (if exists):</strong> Include input and output file paths for result verification, unless the test is clearly defined in the <span class="xref std std-ref">Parallel Code and Test Structure</span>.
-E.g
-.. code-block:</p>
+E.g</p></li>
+</ul>
+</li>
+</ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">signal_spectrum_calculation</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Calculates the spectrum of a signal.</span>
-<span class="sd">Parameters</span>
-<span class="sd">----------</span>
-<span class="sd">data : ndarray</span>
-<span class="sd">  Input signal.</span>
-<span class="sd">Returns</span>
-<span class="sd">-------</span>
-<span class="sd">ndarray</span>
-<span class="sd">  The frequency spectrum of the signal.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculates the spectrum of a signal.</span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    data : ndarray</span>
+<span class="sd">        Input signal.</span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ndarray</span>
+<span class="sd">        The frequency spectrum of the signal.</span>
 
-<span class="sd">Examples (Optional)</span>
-<span class="sd">--------</span>
-<span class="sd">&gt;&gt;&gt; x = np.arange(0,100)</span>
-<span class="sd">&gt;&gt;&gt; y = signal_spectrum_calculation(x)</span>
-<span class="sd">&gt;&gt;&gt; plt.plot(y)</span>
+<span class="sd">    Examples (Optional)</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = np.arange(0,100)</span>
+<span class="sd">    &gt;&gt;&gt; y = signal_spectrum_calculation(x)</span>
+<span class="sd">    &gt;&gt;&gt; plt.plot(y)</span>
 
-<span class="sd">Notes</span>
-<span class="sd">-----</span>
-<span class="sd">Author: Pablo Aguirre</span>
-<span class="sd">DDA: DDA - Descripción de Algoritmos_Simulador_FLS_A0.docx</span>
-<span class="sd">Refs: STANAG 1454</span>
-<span class="sd">Test files:</span>
-<span class="sd">in: tests/data/data_test_signal_spectrum_calculation</span>
-<span class="sd">out: tests/data/data_test_signal_spectrum_calculation_result</span>
-<span class="sd">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Author: Pablo Aguirre</span>
+<span class="sd">    DDA: DDA - Descripción de Algoritmos_Simulador_FLS_A0.docx</span>
+<span class="sd">    Refs: STANAG 1454</span>
+<span class="sd">    Test files:</span>
+<span class="sd">      in: tests/data/data_test_signal_spectrum_calculation</span>
+<span class="sd">      out: tests/data/data_test_signal_spectrum_calculation_result</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </li>
@@ -353,6 +348,25 @@ E.g
 <li><p><strong>File Correspondence:</strong> Every <code class="docutils literal notranslate"><span class="pre">.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">src</span></code> has a matching <code class="docutils literal notranslate"><span class="pre">test_*.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">tests</span></code>.</p></li>
 <li><p><strong>Function-Class Mapping:</strong> Each function in <code class="docutils literal notranslate"><span class="pre">core.py</span></code> must have a dedicated test class in <code class="docutils literal notranslate"><span class="pre">test_core.py</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">add_numbers</span></code> is tested by <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">TestAddNumbers</span></code>).</p></li>
 </ul>
+<p><strong>E.g:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">file</span><span class="p">:</span>  <span class="o">/*</span> <span class="n">src</span><span class="o">/</span><span class="n">package</span><span class="o">/</span><span class="n">core</span><span class="o">.</span><span class="n">py</span><span class="o">*/</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">add_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+          <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+
+<span class="o">-</span> <span class="n">file</span><span class="p">:</span>  <span class="o">/*</span> <span class="n">test_core</span><span class="o">.</span><span class="n">py</span><span class="o">*/</span>
+
+        <span class="k">class</span><span class="w"> </span><span class="nc">TestAddNumbers</span><span class="p">:</span>
+
+          <span class="k">def</span><span class="w"> </span><span class="nf">test_case_1</span><span class="p">():</span>
+            <span class="c1"># test your function</span>
+
+          <span class="k">def</span><span class="w"> </span><span class="nf">test_case_2</span><span class="p">():</span>
+            <span class="c1"># test your function</span>
+          <span class="o">...</span>
+</pre></div>
+</div>
 <p>This structure ensures that each component of your library is adequately tested and that there is clear traceability between code and tests.</p>
 </section>
 <section id="writing-clean-and-readable-code">
@@ -381,48 +395,28 @@ E.g
 </section>
 <section id="management-of-large-files">
 <h2>7. Management of Large Files<a class="headerlink" href="#management-of-large-files" title="Link to this heading">¶</a></h2>
-<section id="git-is-not-a-good-tool-for-storing-large-files">
-<h3><strong>Git is not a good tool for storing large files.</strong><a class="headerlink" href="#git-is-not-a-good-tool-for-storing-large-files" title="Link to this heading">¶</a></h3>
-<p>In fact, it’s not ideal for storing any files that are not plain text (PDFs, Word, etc.). However, as long as these files are small (&lt;5/10 MB), they can be directly uploaded to Git. For larger datasets, especially those that may change over time, it is <strong>strongly recommended NOT to upload them to Git</strong>.
+<p><strong>Git is not a good tool for storing large files.</strong>
+In fact, it’s not ideal for storing any files that are not plain text (like PDFs, Word, etc.). However, as long as these files are small (&lt;5/10 MB), they can be directly uploaded to Git. For larger datasets, especially those that may change over time, it is <strong>strongly recommended NOT to track them with Git</strong>.
 To manage these datasets, it is better to reference their location on OneDrive or similar, and ideally, create an automatic script to download the data and place it in the desired folder.</p>
-</section>
 </section>
 <section id="code-formatting">
 <h2>8. Code Formatting<a class="headerlink" href="#code-formatting" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Indentation:</strong> Use 4 spaces per indentation level. Do not use tabs.</p></li>
-<li><p><strong>Line Length:</strong> Lines should not exceed 99 characters.</p></li>
-<li><p><strong>Whitespace:</strong></p>
-<ul>
-<li><p>Add two blank lines between functions and classes.</p></li>
-<li><p>Avoid trailing whitespace at the end of lines.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="error-and-exception-handling">
-<h2>9. Error and Exception Handling<a class="headerlink" href="#error-and-exception-handling" title="Link to this heading">¶</a></h2>
-<ul>
-<li><p>Use specific exceptions whenever possible and avoid general exceptions. Handle exceptions properly:
-.. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">critical_function</span><span class="p">()</span>
-<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Value error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
+<li><p>Follow <a class="reference external" href="https://peps.python.org/pep-0008/">PEP8 guidelines</a>.</p></li>
+<li><p><strong>Exception (permitted by PEP8):</strong> Limit all lines to a maximum of <strong>99 characters</strong> instead of 79.</p></li>
 </ul>
 </section>
 <section id="import-organization">
-<h2>10. Import Organization<a class="headerlink" href="#import-organization" title="Link to this heading">¶</a></h2>
+<h2>9. Import Organization<a class="headerlink" href="#import-organization" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p>Import standard Python modules first, followed by third-party modules, and finally local project imports with a blank line between each group, for example:
 .. code-block:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">scipy.signal</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">tds_project.module</span><span class="w"> </span><span class="kn">import</span> <span class="n">specific_function</span>
 </pre></div>
 </div>
@@ -430,7 +424,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="import-aliases">
-<h2>11. Import Aliases<a class="headerlink" href="#import-aliases" title="Link to this heading">¶</a></h2>
+<h2>10. Import Aliases<a class="headerlink" href="#import-aliases" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Don’t use import aliases except from:</p>
 <ul>
@@ -448,14 +442,14 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="designation-of-internal-and-public-functions">
-<h2>12. Designation of Internal and Public Functions<a class="headerlink" href="#designation-of-internal-and-public-functions" title="Link to this heading">¶</a></h2>
+<h2>11. Designation of Internal and Public Functions<a class="headerlink" href="#designation-of-internal-and-public-functions" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Internal Functions:</strong> Use a leading underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) to indicate internal functions. Example: <code class="docutils literal notranslate"><span class="pre">_internal_function</span></code>.</p></li>
 <li><p><strong>Public Functions:</strong> No leading underscore, intended for the public API. Example: <code class="docutils literal notranslate"><span class="pre">public_function</span></code>.</p></li>
 </ul>
 </section>
 <section id="absolute-imports">
-<h2>13. Absolute Imports<a class="headerlink" href="#absolute-imports" title="Link to this heading">¶</a></h2>
+<h2>12. Absolute Imports<a class="headerlink" href="#absolute-imports" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p>Use absolute imports for clarity and robustness.</p>
 <ul>
@@ -476,7 +470,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="language-consistency">
-<h2>14. Language Consistency<a class="headerlink" href="#language-consistency" title="Link to this heading">¶</a></h2>
+<h2>13. Language Consistency<a class="headerlink" href="#language-consistency" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Code and Documentation:</strong> All code and documentation should be written in English to ensure clarity and accessibility for all team members and collaborators.</p></li>
 </ul>
@@ -548,17 +542,13 @@ To manage these datasets, it is better to reference their location on OneDrive o
 <li><a class="reference internal" href="#writing-clean-and-readable-code">4. Writing Clean and Readable Code</a></li>
 <li><a class="reference internal" href="#use-of-tools">5. Use of Tools</a></li>
 <li><a class="reference internal" href="#version-control">6. Version control</a></li>
-<li><a class="reference internal" href="#management-of-large-files">7. Management of Large Files</a><ul>
-<li><a class="reference internal" href="#git-is-not-a-good-tool-for-storing-large-files"><strong>Git is not a good tool for storing large files.</strong></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#management-of-large-files">7. Management of Large Files</a></li>
 <li><a class="reference internal" href="#code-formatting">8. Code Formatting</a></li>
-<li><a class="reference internal" href="#error-and-exception-handling">9. Error and Exception Handling</a></li>
-<li><a class="reference internal" href="#import-organization">10. Import Organization</a></li>
-<li><a class="reference internal" href="#import-aliases">11. Import Aliases</a></li>
-<li><a class="reference internal" href="#designation-of-internal-and-public-functions">12. Designation of Internal and Public Functions</a></li>
-<li><a class="reference internal" href="#absolute-imports">13. Absolute Imports</a></li>
-<li><a class="reference internal" href="#language-consistency">14. Language Consistency</a></li>
+<li><a class="reference internal" href="#import-organization">9. Import Organization</a></li>
+<li><a class="reference internal" href="#import-aliases">10. Import Aliases</a></li>
+<li><a class="reference internal" href="#designation-of-internal-and-public-functions">11. Designation of Internal and Public Functions</a></li>
+<li><a class="reference internal" href="#absolute-imports">12. Absolute Imports</a></li>
+<li><a class="reference internal" href="#language-consistency">13. Language Consistency</a></li>
 </ul>
 </li>
 </ul>
