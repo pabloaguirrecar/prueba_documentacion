@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="nameless" href="readme.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="shipmine" href="readme.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>nameless 0.0.0 documentation</title>
+        <title>shipmine 0.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=34bb78ad" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">nameless 0.0.0 documentation</div></a>
+      <a href="#"><div class="brand">shipmine 0.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -190,7 +190,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
-  <span class="sidebar-brand-text">nameless 0.0.0 documentation</span>
+  <span class="sidebar-brand-text">shipmine 0.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -199,13 +199,13 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">nameless</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">shipmine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="style_guide.html">Style Guide for TDS Developments in Python</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/nameless.html">nameless</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/submodule.html">submodule package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/shipmine.html">shipmine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/filters.html">filters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
@@ -254,14 +254,14 @@
 <h1>Contents<a class="headerlink" href="#contents" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">nameless</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">shipmine</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#table-of-contents">Table of Contents</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#data">Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#testing-strategy">Testing Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#running-tests">Running Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#tox">Tox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#version-management">Version management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#sphinx">Sphinx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#contributing">Contributing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#author">Author</a></li>
 </ul>
@@ -271,27 +271,28 @@
 <li class="toctree-l1"><a class="reference internal" href="style_guide.html">Style Guide for TDS Developments in Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="style_guide.html#naming-conventions">1. Naming Conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="style_guide.html#documentation">2. Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#writing-clean-and-readable-code">3. Writing Clean and Readable Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#use-of-tools">4. Use of Tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#best-practices">5. Best Practices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#management-of-large-files">6. Management of Large Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#code-formatting">7. Code Formatting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#error-and-exception-handling">8. Error and Exception Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#import-organization">9. Import Organization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#import-aliases">10. Import Aliases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#designation-of-internal-and-public-functions">11. Designation of Internal and Public Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#absolute-imports">12. Absolute Imports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="style_guide.html#language-consistency">13. Language Consistency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#parallel-code-and-test-structure">3. Parallel Code and Test Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#writing-clean-and-readable-code">4. Writing Clean and Readable Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#use-of-tools">5. Use of Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#version-control">6. Version control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#management-of-large-files">7. Management of Large Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#code-formatting">8. Code Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#error-and-exception-handling">9. Error and Exception Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#import-organization">10. Import Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#import-aliases">11. Import Aliases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#designation-of-internal-and-public-functions">12. Designation of Internal and Public Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#absolute-imports">13. Absolute Imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style_guide.html#language-consistency">14. Language Consistency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/nameless.html">nameless</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/submodule.html">submodule package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/shipmine.html">shipmine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/filters.html">filters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">0.0.0 (2025-06-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">0.0.0 (2025-06-06)</a></li>
 </ul>
 </li>
 </ul>
@@ -316,7 +317,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">nameless</div>
+                <div class="title">shipmine</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -325,7 +326,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Tu Nombre
+                Copyright &#169; 2025, Pablo Aguirre Carcel
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

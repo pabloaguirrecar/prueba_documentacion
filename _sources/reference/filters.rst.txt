@@ -1,0 +1,6 @@
+filters
+=======
+
+.. automodule:: shipmine.filters
+    :members:
+    :undoc-members:

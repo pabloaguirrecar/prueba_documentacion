@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Reference" href="reference/index.html" /><link rel="prev" title="Usage" href="usage.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Style Guide for TDS Developments in Python - nameless 0.0.0 documentation</title>
+        <title>Style Guide for TDS Developments in Python - shipmine 0.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=34bb78ad" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">nameless 0.0.0 documentation</div></a>
+      <a href="index.html"><div class="brand">shipmine 0.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -190,7 +190,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">nameless 0.0.0 documentation</span>
+  <span class="sidebar-brand-text">shipmine 0.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -199,13 +199,13 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="readme.html">nameless</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">shipmine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Style Guide for TDS Developments in Python</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/nameless.html">nameless</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/submodule.html">submodule package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/shipmine.html">shipmine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/filters.html">filters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
@@ -276,30 +276,54 @@
 <section id="documentation">
 <h2>2. Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h2>
 <ul>
-<li><p><strong>Docstrings:</strong></p>
-<ul class="simple">
-<li><p>Use triple quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> for docstrings.</p></li>
-<li><p>All modules, classes, and functions should have docstrings explaining their purpose and usage.</p></li>
-<li><p>It is recommended to use <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy style docstrings</a></p></li>
-</ul>
+<li><p><strong>Docstrings:</strong>
+Each <span class="xref std std-ref">public</span> function, class, and module must include a docstring using triple quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.</p>
+<ul>
+<li><p>Use <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy style docstrings</a>.</p></li>
+<li><p>Include purpose, description, and usage in the docstring.</p></li>
+<li><p><em>Parameters:</em> Specify units if applicable.</p></li>
+<li><p><em>Notes:</em></p>
+<ul>
+<li><p><strong>Author:</strong> Name of the contributor.</p></li>
+<li><p><strong>DDA (if exists):</strong> Relevant .docx file and link (stored in <code class="docutils literal notranslate"><span class="pre">docs/DDAs</span></code>).</p></li>
+<li><p><strong>References (if exists):</strong> Standards or related documentation.</p></li>
+<li><p><strong>Test Files (if exists):</strong> Include input and output file paths for result verification, unless the test is clearly defined in the <span class="xref std std-ref">Parallel Code and Test Structure</span>.
+E.g
+.. code-block:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">signal_spectrum_calculation</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Calculates the spectrum of a signal.</span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    data : ndarray</span>
-<span class="sd">        Input signal.</span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    ndarray</span>
-<span class="sd">        The frequency spectrum of the signal.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Calculates the spectrum of a signal.</span>
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">data : ndarray</span>
+<span class="sd">  Input signal.</span>
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">ndarray</span>
+<span class="sd">  The frequency spectrum of the signal.</span>
 
-<span class="sd">    Examples (Optional)</span>
-<span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; x = np.arange(0,100)</span>
-<span class="sd">    &gt;&gt;&gt; y = signal_spectrum_calculation(x)</span>
-<span class="sd">    &gt;&gt;&gt; plt.plot(y)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">Examples (Optional)</span>
+<span class="sd">--------</span>
+<span class="sd">&gt;&gt;&gt; x = np.arange(0,100)</span>
+<span class="sd">&gt;&gt;&gt; y = signal_spectrum_calculation(x)</span>
+<span class="sd">&gt;&gt;&gt; plt.plot(y)</span>
+
+<span class="sd">Notes</span>
+<span class="sd">-----</span>
+<span class="sd">Author: Pablo Aguirre</span>
+<span class="sd">DDA: DDA - Descripción de Algoritmos_Simulador_FLS_A0.docx</span>
+<span class="sd">Refs: STANAG 1454</span>
+<span class="sd">Test files:</span>
+<span class="sd">in: tests/data/data_test_signal_spectrum_calculation</span>
+<span class="sd">out: tests/data/data_test_signal_spectrum_calculation_result</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </li>
@@ -311,8 +335,30 @@
 </li>
 </ul>
 </section>
+<section id="parallel-code-and-test-structure">
+<h2>3. Parallel Code and Test Structure<a class="headerlink" href="#parallel-code-and-test-structure" title="Link to this heading">¶</a></h2>
+<p>To ensure a systematic testing approach, we adhere to a parallel directory structure between the source code (<code class="docutils literal notranslate"><span class="pre">src</span></code>) and the test files (<code class="docutils literal notranslate"><span class="pre">tests</span></code>). This setup facilitates straightforward mapping between source files and their respective tests.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/your_project
+│
+├── /src
+│   └── /package
+│       ├── __init__.py
+│       └── core.py          # Contains functions (e.g., def add_numbers)
+│
+└── /tests
+    ├── __init__.py
+    └── test_core.py         # Contains tests (e.g., class TestAddNumbers for add_numbers)
+</pre></div>
+</div>
+<p><strong>Key Points:</strong></p>
+<ul class="simple">
+<li><p><strong>File Correspondence:</strong> Every <code class="docutils literal notranslate"><span class="pre">.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">src</span></code> has a matching <code class="docutils literal notranslate"><span class="pre">test_*.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">tests</span></code>.</p></li>
+<li><p><strong>Function-Class Mapping:</strong> Each function in <code class="docutils literal notranslate"><span class="pre">core.py</span></code> must have a dedicated test class in <code class="docutils literal notranslate"><span class="pre">test_core.py</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">add_numbers</span></code> is tested by <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">TestAddNumbers</span></code>).</p></li>
+</ul>
+<p>This structure ensures that each component of your library is adequately tested and that there is clear traceability between code and tests.</p>
+</section>
 <section id="writing-clean-and-readable-code">
-<h2>3. Writing Clean and Readable Code<a class="headerlink" href="#writing-clean-and-readable-code" title="Link to this heading">¶</a></h2>
+<h2>4. Writing Clean and Readable Code<a class="headerlink" href="#writing-clean-and-readable-code" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Small Functions:</strong> Functions should do one thing well and be size-limited to facilitate readability.</p></li>
 <li><p><strong>Clear Comments:</strong> Add comments where the code is not self-explanatory.</p></li>
@@ -320,7 +366,7 @@
 </ul>
 </section>
 <section id="use-of-tools">
-<h2>4. Use of Tools<a class="headerlink" href="#use-of-tools" title="Link to this heading">¶</a></h2>
+<h2>5. Use of Tools<a class="headerlink" href="#use-of-tools" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Linting:</strong> Use <code class="docutils literal notranslate"><span class="pre">ruff</span> <span class="pre">check</span></code> to maintain code quality.</p></li>
 <li><p><strong>Formatting:</strong> Adopt <code class="docutils literal notranslate"><span class="pre">ruff</span> <span class="pre">format</span></code> for consistent code formatting.</p></li>
@@ -328,15 +374,15 @@
 <li><p><strong>Automation with Tox:</strong> Utilize <code class="docutils literal notranslate"><span class="pre">tox</span></code> to automate and manage linting, formatting, and testing processes across multiple environments.</p></li>
 </ul>
 </section>
-<section id="best-practices">
-<h2>5. Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">¶</a></h2>
+<section id="version-control">
+<h2>6. Version control<a class="headerlink" href="#version-control" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Versioning:</strong> Adopt semantic versioning.</p></li>
+<li><p><strong>Versioning:</strong> Adopt <a class="reference external" href="https://semver.org/">semantic versioning 2.0.0</a>.</p></li>
 <li><p><strong>Git:</strong> Perform small and descriptive commits, use branches for new features.</p></li>
 </ul>
 </section>
 <section id="management-of-large-files">
-<h2>6. Management of Large Files<a class="headerlink" href="#management-of-large-files" title="Link to this heading">¶</a></h2>
+<h2>7. Management of Large Files<a class="headerlink" href="#management-of-large-files" title="Link to this heading">¶</a></h2>
 <section id="git-is-not-a-good-tool-for-storing-large-files">
 <h3><strong>Git is not a good tool for storing large files.</strong><a class="headerlink" href="#git-is-not-a-good-tool-for-storing-large-files" title="Link to this heading">¶</a></h3>
 <p>In fact, it’s not ideal for storing any files that are not plain text (PDFs, Word, etc.). However, as long as these files are small (&lt;5/10 MB), they can be directly uploaded to Git. For larger datasets, especially those that may change over time, it is <strong>strongly recommended NOT to upload them to Git</strong>.
@@ -344,7 +390,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </section>
 </section>
 <section id="code-formatting">
-<h2>7. Code Formatting<a class="headerlink" href="#code-formatting" title="Link to this heading">¶</a></h2>
+<h2>8. Code Formatting<a class="headerlink" href="#code-formatting" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Indentation:</strong> Use 4 spaces per indentation level. Do not use tabs.</p></li>
 <li><p><strong>Line Length:</strong> Lines should not exceed 99 characters.</p></li>
@@ -357,7 +403,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="error-and-exception-handling">
-<h2>8. Error and Exception Handling<a class="headerlink" href="#error-and-exception-handling" title="Link to this heading">¶</a></h2>
+<h2>9. Error and Exception Handling<a class="headerlink" href="#error-and-exception-handling" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p>Use specific exceptions whenever possible and avoid general exceptions. Handle exceptions properly:
 .. code-block:</p>
@@ -371,7 +417,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="import-organization">
-<h2>9. Import Organization<a class="headerlink" href="#import-organization" title="Link to this heading">¶</a></h2>
+<h2>10. Import Organization<a class="headerlink" href="#import-organization" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p>Import standard Python modules first, followed by third-party modules, and finally local project imports with a blank line between each group, for example:
 .. code-block:</p>
@@ -386,7 +432,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="import-aliases">
-<h2>10. Import Aliases<a class="headerlink" href="#import-aliases" title="Link to this heading">¶</a></h2>
+<h2>11. Import Aliases<a class="headerlink" href="#import-aliases" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Don’t use import aliases except from:</p>
 <ul>
@@ -404,14 +450,14 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="designation-of-internal-and-public-functions">
-<h2>11. Designation of Internal and Public Functions<a class="headerlink" href="#designation-of-internal-and-public-functions" title="Link to this heading">¶</a></h2>
+<h2>12. Designation of Internal and Public Functions<a class="headerlink" href="#designation-of-internal-and-public-functions" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Internal Functions:</strong> Use a leading underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) to indicate internal functions. Example: <code class="docutils literal notranslate"><span class="pre">_internal_function</span></code>.</p></li>
 <li><p><strong>Public Functions:</strong> No leading underscore, intended for the public API. Example: <code class="docutils literal notranslate"><span class="pre">public_function</span></code>.</p></li>
 </ul>
 </section>
 <section id="absolute-imports">
-<h2>12. Absolute Imports<a class="headerlink" href="#absolute-imports" title="Link to this heading">¶</a></h2>
+<h2>13. Absolute Imports<a class="headerlink" href="#absolute-imports" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p>Use absolute imports for clarity and robustness.</p>
 <ul>
@@ -432,7 +478,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
 </ul>
 </section>
 <section id="language-consistency">
-<h2>13. Language Consistency<a class="headerlink" href="#language-consistency" title="Link to this heading">¶</a></h2>
+<h2>14. Language Consistency<a class="headerlink" href="#language-consistency" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Code and Documentation:</strong> All code and documentation should be written in English to ensure clarity and accessibility for all team members and collaborators.</p></li>
 </ul>
@@ -470,7 +516,7 @@ To manage these datasets, it is better to reference their location on OneDrive o
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Tu Nombre
+                Copyright &#169; 2025, Pablo Aguirre Carcel
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -500,20 +546,21 @@ To manage these datasets, it is better to reference their location on OneDrive o
 <li><a class="reference internal" href="#">Style Guide for TDS Developments in Python</a><ul>
 <li><a class="reference internal" href="#naming-conventions">1. Naming Conventions</a></li>
 <li><a class="reference internal" href="#documentation">2. Documentation</a></li>
-<li><a class="reference internal" href="#writing-clean-and-readable-code">3. Writing Clean and Readable Code</a></li>
-<li><a class="reference internal" href="#use-of-tools">4. Use of Tools</a></li>
-<li><a class="reference internal" href="#best-practices">5. Best Practices</a></li>
-<li><a class="reference internal" href="#management-of-large-files">6. Management of Large Files</a><ul>
+<li><a class="reference internal" href="#parallel-code-and-test-structure">3. Parallel Code and Test Structure</a></li>
+<li><a class="reference internal" href="#writing-clean-and-readable-code">4. Writing Clean and Readable Code</a></li>
+<li><a class="reference internal" href="#use-of-tools">5. Use of Tools</a></li>
+<li><a class="reference internal" href="#version-control">6. Version control</a></li>
+<li><a class="reference internal" href="#management-of-large-files">7. Management of Large Files</a><ul>
 <li><a class="reference internal" href="#git-is-not-a-good-tool-for-storing-large-files"><strong>Git is not a good tool for storing large files.</strong></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#code-formatting">7. Code Formatting</a></li>
-<li><a class="reference internal" href="#error-and-exception-handling">8. Error and Exception Handling</a></li>
-<li><a class="reference internal" href="#import-organization">9. Import Organization</a></li>
-<li><a class="reference internal" href="#import-aliases">10. Import Aliases</a></li>
-<li><a class="reference internal" href="#designation-of-internal-and-public-functions">11. Designation of Internal and Public Functions</a></li>
-<li><a class="reference internal" href="#absolute-imports">12. Absolute Imports</a></li>
-<li><a class="reference internal" href="#language-consistency">13. Language Consistency</a></li>
+<li><a class="reference internal" href="#code-formatting">8. Code Formatting</a></li>
+<li><a class="reference internal" href="#error-and-exception-handling">9. Error and Exception Handling</a></li>
+<li><a class="reference internal" href="#import-organization">10. Import Organization</a></li>
+<li><a class="reference internal" href="#import-aliases">11. Import Aliases</a></li>
+<li><a class="reference internal" href="#designation-of-internal-and-public-functions">12. Designation of Internal and Public Functions</a></li>
+<li><a class="reference internal" href="#absolute-imports">13. Absolute Imports</a></li>
+<li><a class="reference internal" href="#language-consistency">14. Language Consistency</a></li>
 </ul>
 </li>
 </ul>

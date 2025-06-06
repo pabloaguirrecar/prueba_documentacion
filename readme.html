@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="installation.html" /><link rel="prev" title="Contents" href="index.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>nameless - nameless 0.0.0 documentation</title>
+        <title>shipmine - shipmine 0.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=34bb78ad" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">nameless 0.0.0 documentation</div></a>
+      <a href="index.html"><div class="brand">shipmine 0.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -190,7 +190,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">nameless 0.0.0 documentation</span>
+  <span class="sidebar-brand-text">shipmine 0.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -199,13 +199,13 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">nameless</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">shipmine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="style_guide.html">Style Guide for TDS Developments in Python</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/nameless.html">nameless</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/submodule.html">submodule package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/shipmine.html">shipmine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/filters.html">filters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
@@ -250,13 +250,13 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="nameless">
-<h1>nameless<a class="headerlink" href="#nameless" title="Link to this heading">¶</a></h1>
-<p>An example package. Generated with cookiecutter-pylibrary.</p>
+          <section id="shipmine">
+<h1>shipmine<a class="headerlink" href="#shipmine" title="Link to this heading">¶</a></h1>
+<p>This is a example of what the structure of a SAES library could be like.</p>
 <section id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>nameless</p>
+<li><p>shipmine</p>
 <ul>
 <li><p><span class="xref std std-ref">Installation</span></p></li>
 <li><p><span class="xref std std-ref">Usage</span></p></li>
@@ -270,8 +270,8 @@
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
 <p>(Optional) Create a conda environment:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">nameless_env</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.13</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">nameless_env</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">shipmine_env</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.13</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">shipmine_env</span>
 </pre></div>
 </div>
 <p>You can install this package using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
@@ -286,8 +286,8 @@
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
 <p>Here is a basic example of how to use this project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">nameless</span><span class="w"> </span><span class="kn">import</span> <span class="n">some_function</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">nameless.module.module_core</span><span class="w"> </span><span class="kn">import</span> <span class="n">some_module_function</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">shipmine</span><span class="w"> </span><span class="kn">import</span> <span class="n">some_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">shipmine.module.module_core</span><span class="w"> </span><span class="kn">import</span> <span class="n">some_module_function</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">some_function</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
@@ -295,17 +295,11 @@
 <section id="description-of-each-folder">
 <h3>Description of each folder:<a class="headerlink" href="#description-of-each-folder" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>src/nameless/:</strong></p>
+<li><p><strong>src/shipmine/:</strong></p>
 <ul>
 <li><p><strong>core.py:</strong> Example file where library functions and logic are implemented. Rename this file with a more descriptive name for your specific project.</p></li>
-<li><p><strong>CLI.py:</strong> Provides a command-line entry point. The <code class="docutils literal notranslate"><span class="pre">run()</span></code> function acts as the starting point, allowing you to run the package with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">nameless</span></code>.</p></li>
 </ul>
 </li>
-</ul>
-<blockquote>
-<div><p><strong>Note:</strong> Although <code class="docutils literal notranslate"><span class="pre">CLI.py</span></code> offers a quick way to execute code, it is recommended to use <code class="docutils literal notranslate"><span class="pre">examples</span></code> to understand and correctly implement the various functionalities of the package. Check the examples for best usage practices.</p>
-</div></blockquote>
-<ul class="simple">
 <li><p><strong>/tests/:</strong> Stores unit and integration tests to ensure the project functions as expected. Use <code class="docutils literal notranslate"><span class="pre">pytest</span></code> to run these tests effectively.</p>
 <ul>
 <li><p><strong>/tests/data/:</strong> If your <strong>unit tests</strong> need specific data, use this folder to store it.</p></li>
@@ -327,53 +321,20 @@
 </ul>
 </section>
 </section>
-<section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Link to this heading">¶</a></h2>
-<section id="git-is-not-a-good-tool-for-storing-large-files">
-<h3><strong>Git is not a good tool for storing large files.</strong><a class="headerlink" href="#git-is-not-a-good-tool-for-storing-large-files" title="Link to this heading">¶</a></h3>
-<p>In fact, it’s not the ideal tool for storing any file that isn’t plain text (PDFs, Word documents, etc.). However, as long as these files are small (&lt;5/10 MB), they can be uploaded directly to Git. For larger data files, especially those that might change over time, it is <strong>strongly recommended NOT to upload them to git</strong>.
-To manage these files, it’s better to reference their location on OneDrive or similar, and ideally, create an automated script to download the data and place it in the desired folder. You can see an example of how to do this in <strong>scripts/get_data_from_onedrive.py</strong></p>
-</section>
-</section>
-<section id="testing-strategy">
-<h2>Testing Strategy<a class="headerlink" href="#testing-strategy" title="Link to this heading">¶</a></h2>
-<section id="folder-structure">
-<h3>Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading">¶</a></h3>
-<p>To ensure a systematic testing approach within this library, we follow a parallel directory structure between the source code (<code class="docutils literal notranslate"><span class="pre">src</span></code>) and the test files (<code class="docutils literal notranslate"><span class="pre">tests</span></code>). This setup guarantees straightforward mapping between source files and their respective tests.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/your_project
-│
-├── /src
-│   └── /package
-│       ├── __init__.py
-│       └── core.py          # Contains functions (e.g., def add_numbers)
-│
-└── /tests
-    ├── __init__.py
-    └── test_core.py         # Contains tests (e.g., class TestAddNumbers for add_numbers)
-</pre></div>
-</div>
-<p>Key Points:</p>
-<ul class="simple">
-<li><p><strong>File Correspondence</strong>: Every <code class="docutils literal notranslate"><span class="pre">.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">src</span></code> has a matching <code class="docutils literal notranslate"><span class="pre">test_*.py</span></code> file in <code class="docutils literal notranslate"><span class="pre">tests</span></code>.</p></li>
-<li><p><strong>Function-Class Mapping</strong>: Each function in <code class="docutils literal notranslate"><span class="pre">core.py</span></code> must have a dedicated test class in <code class="docutils literal notranslate"><span class="pre">test_core.py</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">add_numbers</span></code> is tested by <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">TestAddNumbers</span></code>).</p></li>
-</ul>
-</section>
 <section id="running-tests">
-<h3>Running Tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h3>
-<p>To execute tests, you can specify particular test files or classes using <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, which aids in focusing your testing efforts efficiently:</p>
+<h2>Running Tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h2>
 <ul>
 <li><p><strong>To run all tests</strong> within the project, execute:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest
 </pre></div>
 </div>
 </li>
-<li><p><strong>To run tests for a funciton</strong>, such as <code class="docutils literal notranslate"><span class="pre">add_numbers</span></code> in <code class="docutils literal notranslate"><span class="pre">core.py</span></code> you should execute <code class="docutils literal notranslate"><span class="pre">TestAddNumbers</span></code> in <code class="docutils literal notranslate"><span class="pre">test_core.py</span></code>:</p>
+<li><p><strong>To run tests for a funciton</strong>, such as <code class="docutils literal notranslate"><span class="pre">add_numbers</span></code> in <code class="docutils literal notranslate"><span class="pre">core.py</span></code> you should execute <code class="docutils literal notranslate"><span class="pre">TestAddNumbers</span></code> in <code class="docutils literal notranslate"><span class="pre">test_core.py</span></code> (Check <em>3. Parallel Code and Test Structure</em> in Style Guide):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>tests/test_core.py::TestAddNumbers
 </pre></div>
 </div>
 </li>
 </ul>
-</section>
 </section>
 <section id="tox">
 <h2>Tox<a class="headerlink" href="#tox" title="Link to this heading">¶</a></h2>
@@ -393,7 +354,7 @@ To manage these files, it’s better to reference their location on OneDrive or 
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>If the lint phase fails you can try to fix it automatically with <code class="docutils literal notranslate"><span class="pre">uff</span> <span class="pre">check</span> <span class="pre">--fix</span></code>. If there are error not able to be fixed automatically you should fix them manually.</p></li>
+<li><p>If the lint phase fails you can try to fix it automatically with <code class="docutils literal notranslate"><span class="pre">ruff</span> <span class="pre">check</span> <span class="pre">--fix</span></code>. If there are error not able to be fixed automatically you should fix them manually.</p></li>
 <li><p>If the py (Testing) phase fails you should revise your code and/or your test to fix them.</p></li>
 </ul>
 </section>
@@ -407,6 +368,16 @@ To manage these files, it’s better to reference their location on OneDrive or 
 <li><p><code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">major</span></code> to increase version from 1.0.0 to 2.0.0.</p></li>
 </ul>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">patch</span> <span class="pre">--commit</span> <span class="pre">--tag</span></code> to create a commit and a tag with the version name automatically.</p>
+</section>
+<section id="sphinx">
+<h2>Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading">¶</a></h2>
+<p>To generate the documentation with sphinix you can execute the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">-</span><span class="n">b</span> <span class="n">doctest</span> <span class="n">docs</span> <span class="n">dist</span><span class="o">/</span><span class="n">docs</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span> <span class="n">docs</span> <span class="n">dist</span><span class="o">/</span><span class="n">docs</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">-</span><span class="n">b</span> <span class="n">linkcheck</span> <span class="n">docs</span> <span class="n">dist</span><span class="o">/</span><span class="n">docs</span>
+</pre></div>
+</div>
+<p>The html documentation should have been generated in dist/docs. Open index.html in your web browser to navigate through it.</p>
 </section>
 <section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">¶</a></h2>
@@ -423,7 +394,7 @@ To manage these files, it’s better to reference their location on OneDrive or 
 </section>
 <section id="author">
 <h2>Author<a class="headerlink" href="#author" title="Link to this heading">¶</a></h2>
-<p>This project has been developed by <a class="reference external" href="mailto:u&#46;usuario&#37;&#52;&#48;electronica-submarina&#46;com">Tu Nombre</a>.</p>
+<p>This project has been developed by <a class="reference external" href="mailto:p&#46;aguirre&#37;&#52;&#48;electronica-submarina&#46;com">Pablo Aguirre Carcel</a>.</p>
 </section>
 </section>
 
@@ -456,7 +427,7 @@ To manage these files, it’s better to reference their location on OneDrive or 
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Tu Nombre
+                Copyright &#169; 2025, Pablo Aguirre Carcel
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -483,27 +454,20 @@ To manage these files, it’s better to reference their location on OneDrive or 
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">nameless</a><ul>
+<li><a class="reference internal" href="#">shipmine</a><ul>
 <li><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#usage">Usage</a><ul>
 <li><a class="reference internal" href="#description-of-each-folder">Description of each folder:</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#data">Data</a><ul>
-<li><a class="reference internal" href="#git-is-not-a-good-tool-for-storing-large-files"><strong>Git is not a good tool for storing large files.</strong></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#testing-strategy">Testing Strategy</a><ul>
-<li><a class="reference internal" href="#folder-structure">Folder Structure</a></li>
 <li><a class="reference internal" href="#running-tests">Running Tests</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#tox">Tox</a><ul>
 <li><a class="reference internal" href="#tox-expected-output">Tox expected output</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#version-management">Version management</a></li>
+<li><a class="reference internal" href="#sphinx">Sphinx</a></li>
 <li><a class="reference internal" href="#contributing">Contributing</a></li>
 <li><a class="reference internal" href="#author">Author</a></li>
 </ul>

@@ -1,11 +1,11 @@
-nameless
+shipmine
 ========
 
 .. testsetup::
 
-    from nameless import *
+    from shipmine import *
 
-.. automodule:: nameless
+.. automodule:: shipmine
     :members:
     :undoc-members:
     :special-members: __init__, __len__
