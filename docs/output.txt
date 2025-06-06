@@ -1,0 +1,17 @@
+Results of doctest builder run on 2025-06-06 07:48:53
+=====================================================
+
+Document: reference/nameless
+----------------------------
+1 item passed all tests:
+   4 tests in default
+4 tests in 1 item.
+4 passed.
+Test passed.
+
+Doctest summary
+===============
+    4 tests
+    0 failures in tests
+    0 failures in setup code
+    0 failures in cleanup code

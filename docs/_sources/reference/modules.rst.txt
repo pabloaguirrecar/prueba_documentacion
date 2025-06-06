@@ -1,0 +1,7 @@
+submodule
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   submodule

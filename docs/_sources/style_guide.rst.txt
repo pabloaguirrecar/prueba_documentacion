@@ -1,0 +1,1 @@
+.. mdinclude:: ../style_guide.md

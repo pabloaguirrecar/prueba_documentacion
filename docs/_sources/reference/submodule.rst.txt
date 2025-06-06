@@ -1,0 +1,21 @@
+submodule package
+=================
+
+Submodules
+----------
+
+submodule.filters module
+------------------------
+
+.. automodule:: submodule.filters
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: submodule
+   :members:
+   :show-inheritance:
+   :undoc-members:
