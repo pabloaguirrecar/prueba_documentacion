@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="installation.html" /><link rel="prev" title="Contents" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Style Guide for TDS Developments in Python" href="style_guide.html" /><link rel="prev" title="Contents" href="index.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
         <title>shipmine - shipmine 0.0.0 documentation</title>
@@ -200,8 +200,6 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">shipmine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="style_guide.html">Style Guide for TDS Developments in Python</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/shipmine.html">shipmine</a></li>
@@ -261,7 +259,6 @@
 <li><p><span class="xref std std-ref">Installation</span></p></li>
 <li><p><span class="xref std std-ref">Usage</span></p></li>
 <li><p><span class="xref std std-ref">Contributing</span></p></li>
-<li><p><span class="xref std std-ref">Data</span></p></li>
 <li><p><span class="xref std std-ref">Author</span></p></li>
 </ul>
 </li>
@@ -320,9 +317,8 @@
 <li><p><strong>/data/</strong>: Here you will store data for tests, examples, etc. For more information on managing large files, see <span class="xref std std-ref">Data</span>.</p></li>
 </ul>
 </section>
-</section>
 <section id="running-tests">
-<h2>Running Tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h2>
+<h3>Running Tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h3>
 <ul>
 <li><p><strong>To run all tests</strong> within the project, execute:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest
@@ -337,13 +333,13 @@
 </ul>
 </section>
 <section id="tox">
-<h2>Tox<a class="headerlink" href="#tox" title="Link to this heading">¶</a></h2>
+<h3>Tox<a class="headerlink" href="#tox" title="Link to this heading">¶</a></h3>
 <p>To run all the tests and code checks, simply run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tox</span>
 </pre></div>
 </div>
 <section id="tox-expected-output">
-<h3>Tox expected output<a class="headerlink" href="#tox-expected-output" title="Link to this heading">¶</a></h3>
+<h4>Tox expected output<a class="headerlink" href="#tox-expected-output" title="Link to this heading">¶</a></h4>
 <p>After execting tox and everithing passes correctly you should get a output similar to:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Wrote</span> <span class="n">HTML</span> <span class="n">report</span> <span class="n">to</span> <span class="n">test_reports</span><span class="o">/</span><span class="n">htmlcov</span>\<span class="n">index</span><span class="o">.</span><span class="n">html</span>
   <span class="nb">format</span><span class="p">:</span> <span class="n">OK</span> <span class="p">(</span><span class="mf">1.10</span><span class="o">=</span><span class="n">setup</span><span class="p">[</span><span class="mf">0.14</span><span class="p">]</span><span class="o">+</span><span class="n">cmd</span><span class="p">[</span><span class="mf">0.96</span><span class="p">]</span> <span class="n">seconds</span><span class="p">)</span>
@@ -360,7 +356,7 @@
 </section>
 </section>
 <section id="version-management">
-<h2>Version management<a class="headerlink" href="#version-management" title="Link to this heading">¶</a></h2>
+<h3>Version management<a class="headerlink" href="#version-management" title="Link to this heading">¶</a></h3>
 <p>This template provides a basic bumpversion configuration. This tool help to change all the places where version is stored at the same time. It’s as simple as running:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">patch</span></code> to increase version from 1.0.0 to 1.0.1.</p></li>
@@ -370,7 +366,7 @@
 <p>You can use <code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">patch</span> <span class="pre">--commit</span> <span class="pre">--tag</span></code> to create a commit and a tag with the version name automatically.</p>
 </section>
 <section id="sphinx">
-<h2>Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading">¶</a></h2>
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading">¶</a></h3>
 <p>To generate the documentation with sphinix you can execute the following commands:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">-</span><span class="n">b</span> <span class="n">doctest</span> <span class="n">docs</span> <span class="n">dist</span><span class="o">/</span><span class="n">docs</span>
 <span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">-</span><span class="n">b</span> <span class="n">html</span> <span class="n">docs</span> <span class="n">dist</span><span class="o">/</span><span class="n">docs</span>
@@ -378,6 +374,7 @@
 </pre></div>
 </div>
 <p>The html documentation should have been generated in dist/docs. Open index.html in your web browser to navigate through it.</p>
+</section>
 </section>
 <section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">¶</a></h2>
@@ -403,12 +400,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="installation.html">
+          <a class="next-page" href="style_guide.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Installation</div>
+                <div class="title">Style Guide for TDS Developments in Python</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -459,8 +456,6 @@
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#usage">Usage</a><ul>
 <li><a class="reference internal" href="#description-of-each-folder">Description of each folder:</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#running-tests">Running Tests</a></li>
 <li><a class="reference internal" href="#tox">Tox</a><ul>
 <li><a class="reference internal" href="#tox-expected-output">Tox expected output</a></li>
@@ -468,6 +463,8 @@
 </li>
 <li><a class="reference internal" href="#version-management">Version management</a></li>
 <li><a class="reference internal" href="#sphinx">Sphinx</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#contributing">Contributing</a></li>
 <li><a class="reference internal" href="#author">Author</a></li>
 </ul>
