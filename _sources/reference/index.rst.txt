@@ -1,8 +1,11 @@
 Reference
 =========
 
-.. toctree::
-    :glob:
+Click in link below to see the documentation of the library.
 
-    shipmine*
-    filters*
+.. autosummary::
+   :toctree: _autosummary
+   :template: custommoduletemplate.rst
+   :recursive:
+   
+   nameless

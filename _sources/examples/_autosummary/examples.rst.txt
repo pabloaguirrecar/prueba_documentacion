@@ -1,0 +1,15 @@
+﻿examples
+========
+
+.. automodule:: examples
+   
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custommoduletemplate.rst
+   :recursive:
+
+
+   main_example

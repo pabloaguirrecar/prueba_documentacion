@@ -1,0 +1,6 @@
+high\_pass\_filter
+==================
+
+.. currentmodule:: nameless.filters.standard_filters
+
+.. autofunction:: high_pass_filter

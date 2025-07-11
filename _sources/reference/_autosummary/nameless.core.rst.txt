@@ -1,0 +1,15 @@
+core
+====
+
+.. automodule:: nameless.core
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+
+   
+      add_numbers
+      compute
+   

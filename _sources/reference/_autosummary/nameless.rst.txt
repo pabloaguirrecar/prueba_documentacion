@@ -1,0 +1,16 @@
+﻿nameless
+========
+
+.. automodule:: nameless
+   
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custommoduletemplate.rst
+   :recursive:
+
+
+   core
+   filters

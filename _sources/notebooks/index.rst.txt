@@ -1,0 +1,11 @@
+Notebooks
+=========
+
+Click in link below to see all the notebooks.
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custommoduletemplate.rst
+   :recursive:
+   
+   notebooks

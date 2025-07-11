@@ -1,0 +1,6 @@
+add\_numbers
+============
+
+.. currentmodule:: nameless.core
+
+.. autofunction:: add_numbers

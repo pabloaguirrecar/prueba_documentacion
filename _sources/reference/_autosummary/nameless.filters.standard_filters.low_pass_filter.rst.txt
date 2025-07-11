@@ -1,0 +1,6 @@
+low\_pass\_filter
+=================
+
+.. currentmodule:: nameless.filters.standard_filters
+
+.. autofunction:: low_pass_filter

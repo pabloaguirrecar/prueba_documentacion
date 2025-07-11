@@ -1,0 +1,6 @@
+compute
+=======
+
+.. currentmodule:: nameless.core
+
+.. autofunction:: compute

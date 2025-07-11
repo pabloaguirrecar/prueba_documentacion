@@ -8,8 +8,8 @@ Contents
    readme
    style_guide
    reference/index
-   authors
-   changelog
+   examples/index
+   notebooks/index
 
 Indices and tables
 ==================

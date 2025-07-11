@@ -1,0 +1,15 @@
+standard\_filters
+=================
+
+.. automodule:: nameless.filters.standard_filters
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+
+   
+      high_pass_filter
+      low_pass_filter
+   

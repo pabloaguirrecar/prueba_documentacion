@@ -1,0 +1,14 @@
+main\_example
+=============
+
+.. automodule:: examples.main_example
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+
+   
+      main
+   

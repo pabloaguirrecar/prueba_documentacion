@@ -1,0 +1,11 @@
+Examples
+=========
+
+Click in link below to see all the examples.
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custommoduletemplate.rst
+   :recursive:
+   
+   examples

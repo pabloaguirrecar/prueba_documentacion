@@ -1,0 +1,6 @@
+main
+====
+
+.. currentmodule:: examples.main_example
+
+.. autofunction:: main

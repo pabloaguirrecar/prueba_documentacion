@@ -1,0 +1,15 @@
+﻿notebooks
+=========
+
+.. automodule:: notebooks
+   
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custommoduletemplate.rst
+   :recursive:
+
+
+   notebook

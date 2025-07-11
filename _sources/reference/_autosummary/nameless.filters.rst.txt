@@ -1,0 +1,15 @@
+filters
+=======
+
+.. automodule:: nameless.filters
+   
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custommoduletemplate.rst
+   :recursive:
+
+
+   standard_filters
